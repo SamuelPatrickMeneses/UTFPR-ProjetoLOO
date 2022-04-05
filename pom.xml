@@ -35,7 +35,7 @@
                     <archive>
                         <manifest>
                             <mainClass>
-                                edu.utfpr.aluno.controller.Main
+                              edu.utfpr.aluno.controller.Main
                             </mainClass>
                         </manifest>
                     </archive>

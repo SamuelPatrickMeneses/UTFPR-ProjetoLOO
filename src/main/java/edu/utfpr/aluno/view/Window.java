@@ -1,6 +1,12 @@
 package edu.utfpr.aluno.view;
 
+import edu.utfpr.aluno.view.telas.LoginPane;
 import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Window extends Application implements VisualWindow {
@@ -18,17 +24,12 @@ public class Window extends Application implements VisualWindow {
         gui.setPalco(palco);
         gui.initLogin();
         
-        /*AnchorPane a = new AnchorPane();
-        a.setPrefSize(800, 600);
-        TextField tf = new TextField();
-        tf.setPromptText("Usuario");
-        PasswordField pf = new PasswordField();
-        pf.setPromptText("Senha");
-        Button b = new Button();
-        b.setText("login");
-        a.getChildren().addAll(tf,pf,b);
-        Scene s = new Scene(a);
-        palco.setScene(s);*/
+        LoginPane lp = new LoginPane();
+        lp.setLayouts();
+        lp.setComponents();
+        Scene s = new Scene(lp);
+        palco.setScene(s);
+        palco.show();
 
     }
     public static void main(String[] args) {

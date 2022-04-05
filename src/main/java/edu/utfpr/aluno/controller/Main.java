@@ -1,4 +1,4 @@
-package edu.utfpr.aluno.control;
+package edu.utfpr.aluno.controller;
 import edu.utfpr.aluno.view.GUIManeger;
 import  edu.utfpr.aluno.view.Window;
 public class Main {

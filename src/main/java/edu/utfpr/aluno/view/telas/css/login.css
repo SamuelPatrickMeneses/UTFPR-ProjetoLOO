@@ -1,0 +1,12 @@
+.tf{
+    -fx-margin: 50px;
+    -fx-display: block;
+}
+.bl{
+    -fx-positon:relative;
+    -fx-top:50px;
+}
+.div{
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}

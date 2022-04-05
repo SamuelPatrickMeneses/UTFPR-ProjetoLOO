@@ -22,7 +22,7 @@ public class LoginPane extends AnchorPane implements VisualWindow{
 
     @Override
     public void setLayouts() {
-        setPrefSize(800, 600);
+        setPrefSize(300, 150);
         user.getStyleClass().add("tf");
         user.setPromptText("Usuario");
         senha.getStyleClass().add("tf");
@@ -48,7 +48,12 @@ public class LoginPane extends AnchorPane implements VisualWindow{
 
     @Override
     public void doAdjustmentLayout() {
-        
+        user.setLayoutX(100);
+        user.setLayoutY(50);
+        senha.setLayoutX(100);
+        senha.setLayoutY(80);
+        blogin.setLayoutX(100);
+        blogin.setLayoutY(120);
         
     }
 }

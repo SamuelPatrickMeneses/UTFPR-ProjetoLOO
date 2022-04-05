@@ -24,12 +24,13 @@ public class Window extends Application implements VisualWindow {
         gui.setPalco(palco);
         gui.initLogin();
         
-        LoginPane lp = new LoginPane();
+        /*LoginPane lp = new LoginPane();
         lp.setLayouts();
         lp.setComponents();
         Scene s = new Scene(lp);
         palco.setScene(s);
         palco.show();
+        lp.doAdjustmentLayout();*/
 
     }
     public static void main(String[] args) {

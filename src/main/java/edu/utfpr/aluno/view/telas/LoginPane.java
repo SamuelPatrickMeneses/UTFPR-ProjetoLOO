@@ -18,6 +18,7 @@ public class LoginPane extends AnchorPane implements VisualWindow{
         user = new TextField();
         senha = new PasswordField();
         blogin = new Button();
+        div = new VBox();
     }
 
     @Override
@@ -29,6 +30,9 @@ public class LoginPane extends AnchorPane implements VisualWindow{
         senha.setPromptText("Senha");
         blogin.getStyleClass().add("bl");
         blogin.setText("login");
+        div.getStyleClass().add("div");
+        getStyleClass().add("main");
+        //setStyle("-fx-background-color: gray");
         getStylesheets().add("edu/utfpr/aluno/view/telas/login.css");
 
         
@@ -37,7 +41,8 @@ public class LoginPane extends AnchorPane implements VisualWindow{
     @Override
     public void setComponents() {
         // TODO Auto-generated method stub
-        getChildren().addAll(user,senha,blogin);
+        div.getChildren().addAll(user, senha, blogin);
+        getChildren().addAll(div);
     }
 
     @Override
@@ -48,12 +53,14 @@ public class LoginPane extends AnchorPane implements VisualWindow{
 
     @Override
     public void doAdjustmentLayout() {
-        user.setLayoutX((this.getWidth()-user.getWidth())/2);
+        div.setLayoutX((this.getWidth()-div.getWidth())/2);
+        div.setLayoutY((this.getHeight()-div.getHeight())/2);
+        /*user.setLayoutX((this.getWidth()-user.getWidth())/2);
         user.setLayoutY(30);
         senha.setLayoutX((this.getWidth()-senha.getWidth())/2);
         senha.setLayoutY(60);
         blogin.setLayoutX((this.getWidth() - blogin.getWidth())/2);
-        blogin.setLayoutY(100);
+        blogin.setLayoutY(100);*/
         
     }
 }

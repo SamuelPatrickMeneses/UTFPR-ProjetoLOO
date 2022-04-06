@@ -1,14 +1,22 @@
 .tf{
     -fx-margin: 50px;
     -fx-display: block;
+    -fx-prompt-text-fill: #000000;
 }
 .bl{
     -fx-positon:relative;
     -fx-top:50px;
     -fx-background-color: brown;
+    -fx-color: white;
 }
 
 .div{
     -fx-spacing: 20px;
     -fx-alignment: center;
+    -fx-padding: 0;
+    -fx-background-color: gray;
+}
+}
+.main{
+    -fx-background-color: gray;
 }

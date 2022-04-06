@@ -29,7 +29,7 @@ public class LoginPane extends AnchorPane implements VisualWindow{
         senha.setPromptText("Senha");
         blogin.getStyleClass().add("bl");
         blogin.setText("login");
-        getStylesheets().add("ude/utfpr/aluno/view/telas/css/login.css");
+        getStylesheets().add("edu/utfpr/aluno/view/telas/login.css");
 
         
     }
@@ -48,12 +48,12 @@ public class LoginPane extends AnchorPane implements VisualWindow{
 
     @Override
     public void doAdjustmentLayout() {
-        user.setLayoutX(100);
-        user.setLayoutY(50);
-        senha.setLayoutX(100);
-        senha.setLayoutY(80);
-        blogin.setLayoutX(100);
-        blogin.setLayoutY(120);
+        user.setLayoutX((this.getWidth()-user.getWidth())/2);
+        user.setLayoutY(30);
+        senha.setLayoutX((this.getWidth()-senha.getWidth())/2);
+        senha.setLayoutY(60);
+        blogin.setLayoutX((this.getWidth() - blogin.getWidth())/2);
+        blogin.setLayoutY(100);
         
     }
 }

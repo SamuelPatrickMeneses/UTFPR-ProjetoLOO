@@ -53,6 +53,7 @@ public class GUIManeger implements VisualWindow{
         palco.setScene(cena);
         palco.show();
         doAdjustmentLayout();
+        palco.setResizable(false);
         /*if(screens.get("login") == null)
             screens.put("login", new LoginPane()) ;
         Scene cena = new Scene((Parent)screens.get("login"));

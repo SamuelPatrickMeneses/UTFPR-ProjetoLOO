@@ -7,6 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 
 public class LoginPane extends AnchorPane implements VisualWindow{
 
@@ -14,22 +15,28 @@ public class LoginPane extends AnchorPane implements VisualWindow{
     private PasswordField senha;
     private Button blogin;
     private VBox div;
+    private Font bfont;
+    private Button bcadastro;
     public LoginPane(){
         user = new TextField();
         senha = new PasswordField();
         blogin = new Button();
+        bcadastro = new Button();
+        bfont = new Font("calibre", 24);
         div = new VBox();
     }
 
     @Override
     public void setLayouts() {
-        setPrefSize(300, 150);
+        setPrefSize(800, 600);
         user.getStyleClass().add("tf");
         user.setPromptText("Usuario");
         senha.getStyleClass().add("tf");
         senha.setPromptText("Senha");
-        blogin.getStyleClass().add("bl");
+        blogin.getStyleClass().add("button");
         blogin.setText("login");
+        bcadastro.setText("cadastrar");
+        bcadastro.getStyleClass().add("button");
         div.getStyleClass().add("div");
         getStyleClass().add("main");
         //setStyle("-fx-background-color: gray");
@@ -41,7 +48,9 @@ public class LoginPane extends AnchorPane implements VisualWindow{
     @Override
     public void setComponents() {
         // TODO Auto-generated method stub
-        div.getChildren().addAll(user, senha, blogin);
+        blogin.setFont(bfont);
+        bcadastro.setFont(bfont);
+        div.getChildren().addAll(user, senha, blogin, bcadastro);
         getChildren().addAll(div);
     }
 
@@ -53,6 +62,8 @@ public class LoginPane extends AnchorPane implements VisualWindow{
 
     @Override
     public void doAdjustmentLayout() {
+        blogin.setPrefWidth(div.getWidth());
+        bcadastro.setPrefWidth(div.getWidth());
         div.setLayoutX((this.getWidth()-div.getWidth())/2);
         div.setLayoutY((this.getHeight()-div.getHeight())/2);
         /*user.setLayoutX((this.getWidth()-user.getWidth())/2);

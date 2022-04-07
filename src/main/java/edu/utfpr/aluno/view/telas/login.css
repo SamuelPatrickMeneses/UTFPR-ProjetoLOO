@@ -2,19 +2,25 @@
     -fx-margin: 50px;
     -fx-display: block;
     -fx-prompt-text-fill: #000000;
+    -fx-border: solid 2px black;
 }
-.bl{
-    -fx-positon:relative;
-    -fx-top:50px;
-    -fx-background-color: brown;
-    -fx-color: white;
+.tf:focus{
+    border-color: aqua;
 }
+.button{
+    -fx-background-color: rgb(12, 36, 250);
+    -fx-text-fill:white;
+}
+.button.button:pressed{
+    -fx-text-fill:rgb(12, 36, 250);
+}
+
 
 .div{
     -fx-spacing: 20px;
     -fx-alignment: center;
-    -fx-padding: 0;
-    -fx-background-color: gray;
+    -fx-padding: 20px;
+    -fx-background-color: white;
 }
 }
 .main{

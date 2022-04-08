@@ -24,5 +24,8 @@
 }
 }
 .main{
-    -fx-background-color: gray;
+    -fx-background-image: url("img/login-bg.jpeg");
+}
+.h1{
+    -fx-text-fill: black;
 }
